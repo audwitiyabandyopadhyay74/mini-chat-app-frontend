@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { io } from 'socket.io-client';
 
-const SOCKET_URL = 'https://mini-chat-app-backend.vercel.app/';
+const SOCKET_URL = 'https://mini-chat-app-backend-qh1z.onrender.com/';
 const ROOM = 'group';
 
 export default function App() {
