@@ -32,7 +32,7 @@ export default function App() {
         setMessages((prev) => [...prev, msgObj]);
       });
       socket.on('privateMessage', ({from, to, message}) => {
-        setPrivateMessages((prev) => [...prev, {from, to: to || username, message}]);
+        setPrivateMessages((prev) => [...prev, {from, to, message}]); // always use both from and to
       });
     }
     return () => {
